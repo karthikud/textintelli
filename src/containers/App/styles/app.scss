@@ -1,0 +1,25 @@
+/* global styles */
+
+@import 'variables';
+@import 'third-party/normalize';
+@import 'fonts/roboto';
+@import 'typography';
+@import 'links';
+
+:global(body) {
+
+	
+
+ 
+
+  .error {
+    color: #a94442;
+    background-color: #f2dede;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: $border-radius;
+  }
+
+}
+
+
