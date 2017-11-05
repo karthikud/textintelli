@@ -117,7 +117,8 @@ async.series({
     search:function(callback) {
 
 		//var results  = index.search(req.body.searchterm);
-        var results = index.search(req.body.searchterm).map(function (result) {
+		console.log('searchtype',req.body.searchtype);
+        var results = index.search(req.body.searchterm,{bool: req.body.searchtype}).map(function (result) {
 		console.log('search index',result);
             return Docs.filter(function (q) {
 			return q.id === result.ref
